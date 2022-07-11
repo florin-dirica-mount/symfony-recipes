@@ -24,7 +24,7 @@
                         "horeca_middleware_client:",
                         "  provider_api_class: App\\Service\\ProviderApi",
                         "  enable_request_exception_logging: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'",
-                        "  ",
+                        "",
                         "  horeca:",
                         "    base_url: '%env(resolve:HORECA_BASE_URL)%'",
                         "    api_key: '%env(resolve:HORECA_API_KEY)%'",
