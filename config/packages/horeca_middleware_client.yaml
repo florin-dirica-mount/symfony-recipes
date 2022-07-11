@@ -1,3 +1,9 @@
 horeca_middleware_client:
     provider_api_class: App\Service\ProviderApi
     enable_request_exception_logging: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'
+
+    horeca:
+        base_url: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'
+        api_key: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'
+        shared_key: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'
+        middleware_client_id: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'
