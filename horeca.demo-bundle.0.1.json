@@ -1,0 +1,30 @@
+{
+    "manifests": {
+        "horeca/demo-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Horeca\\DemoBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "env": {
+                    "HORECA_DEMO_URL": "https://replace-this"
+                }
+            },
+            "files": {
+                "config/packages/horeca_demo.yaml": {
+                    "contents": [
+                        "horeca_demo:",
+                        "  url: '%env(HORECA_DEMO_URL)%'",
+                        "  other_key_3: 'other_value_3'"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "98a0b15934d34daa8c211e489d549f90ed680d87"
+        }
+    }
+}
