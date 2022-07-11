@@ -16,8 +16,8 @@
                 "config/packages/horeca_middleware_client.yaml": {
                     "contents": [
                         "horeca_middleware_client:",
-                        "  horeca_base_url: '%env(HORECA_BASE_URL)%'",
-                        "  test_mode: false"
+                        "  provider_api_class: App\\Service\\ProviderApi",
+                        "  enable_request_exception_logging: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'"
                     ],
                     "executable": false
                 }
