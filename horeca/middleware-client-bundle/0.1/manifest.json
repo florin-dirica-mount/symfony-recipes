@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "horeca/middleware-client-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Horeca\\MiddlewareClientBundle\\HorecaMiddlewareClientBundle": [
+                        "all"
+                    ]
+                },
+                "env": {
+                    "HORECA_BASE_URL": "https://replace-this",
+                    "HORECA_API_KEY": "MySecretApiKey"
+                }
+            },
+            "files": {
+                "config/packages/horeca_middleware_client.yaml": {
+                    "contents": [
+                        "horeca_middleware_client:",
+                        "  provider_api_class: App\\Service\\ProviderApi",
+                        "  enable_request_exception_logging: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "64fd2ec2cbcf7546fa0c7eb01befe32b907637d9"
+        }
+    }
+}
