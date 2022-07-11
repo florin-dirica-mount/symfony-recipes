@@ -3,7 +3,7 @@
         "horeca/demo-bundle": {
             "manifest": {
                 "bundles": {
-                    "Horeca\\DemoBundle": [
+                    "Horeca\\HorecaDemoBundle": [
                         "all"
                     ]
                 },
@@ -24,7 +24,7 @@
                     "executable": false
                 }
             },
-            "ref": "98a0b15934d34daa8c211e489d549f90ed680d87"
+            "ref": "92bf4e76137a7f1117ef352c612007385909e079"
         }
     }
 }
