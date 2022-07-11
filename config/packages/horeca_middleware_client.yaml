@@ -1,0 +1,3 @@
+horeca_middleware_client:
+    provider_api_class: App\Service\ProviderApi
+    enable_request_exception_logging: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'

@@ -7,6 +7,9 @@
                         "all"
                     ]
                 },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
                 "env": {
                     "HORECA_BASE_URL": "https://replace-this",
                     "HORECA_API_KEY": "MySecretApiKey"
@@ -22,7 +25,7 @@
                     "executable": false
                 }
             },
-            "ref": "64fd2ec2cbcf7546fa0c7eb01befe32b907637d9"
+            "ref": "9a069ada8ff6d3e915d36670eb69e703e24edb74"
         }
     }
 }
