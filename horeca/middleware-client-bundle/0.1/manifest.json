@@ -8,7 +8,7 @@
                     ]
                 },
                 "copy-from-recipe": {
-                    "config/horeca_middleware_client.yaml": "%CONFIG_DIR%/packages"
+                    "config/": "%CONFIG_DIR%"
                 },
                 "env": {
                     "HORECA_BASE_URL": "https://replace-this",
