@@ -7,9 +7,6 @@
                         "all"
                     ]
                 },
-                "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%"
-                },
                 "env": {
                     "HORECA_BASE_URL": "https://replace-this",
                     "HORECA_API_KEY": "MySecretApiKey"
