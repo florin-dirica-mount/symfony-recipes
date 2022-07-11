@@ -1,0 +1,2 @@
+horeca_middleware_client:
+    test_mode: true

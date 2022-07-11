@@ -2,6 +2,9 @@
     "recipes": {
         "horeca/demo-bundle": [
             "0.3.1"
+        ],
+        "horeca/middleware-client-bundle": [
+            "0.1"
         ]
     },
     "branch": "master",
