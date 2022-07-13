@@ -1,9 +1,4 @@
 horeca_middleware_client:
     provider_api_class: App\Service\ProviderApi
     enable_request_exception_logging: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'
-
-    horeca:
-        base_url: '%env(resolve:HORECA_BASE_URL)%'
-        api_key: '%env(resolve:HORECA_API_KEY)%'
-        shared_key: '%env(resolve:HORECA_SHARED_KEY)%'
-        middleware_client_id: '%env(resolve:HORECA_MIDDLEWARE_CLIENT_ID)%'
+    order_notification_messenger_transport: 'hmc_order_notification'

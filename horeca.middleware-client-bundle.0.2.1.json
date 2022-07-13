@@ -1,0 +1,35 @@
+{
+    "manifests": {
+        "horeca/middleware-client-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Horeca\\MiddlewareClientBundle\\HorecaMiddlewareClientBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
+                "env": {
+                    "HORECA_BASE_URL": "The horeca backend URL",
+                    "HORECA_API_KEY": "The API key used to send requests to horeca backend",
+                    "HORECA_SHARED_KEY": "The API key horeca backend uses to send requests to middleware api",
+                    "HORECA_MIDDLEWARE_CLIENT_ID": "The middleware client id configured in horeca backend. Used to send requests to horeca backend",
+                    "HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING": true
+                }
+            },
+            "files": {
+                "config/packages/horeca_middleware_client.yaml": {
+                    "contents": [
+                        "horeca_middleware_client:",
+                        "  provider_api_class: App\\Service\\ProviderApi",
+                        "  enable_request_exception_logging: '%env(resolve:HORECA_ENABLE_REQUEST_EXCEPTION_LOGGING)%'",
+                        "  order_notification_messenger_transport: 'hmc_order_notification'"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "3325c104827297a85f4cb2dcae079a76a60f091a"
+        }
+    }
+}

@@ -1,7 +1,8 @@
 {
     "recipes": {
         "horeca/middleware-client-bundle": [
-            "0.2"
+            "0.2",
+            "0.2.1"
         ]
     },
     "branch": "master",
