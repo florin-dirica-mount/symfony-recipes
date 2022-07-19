@@ -7,9 +7,6 @@
                         "all"
                     ]
                 },
-                "copy-from-recipe": {
-                    "config/": "%CONFIG_DIR%"
-                },
                 "env": {
                     "HORECA_BASE_URL": "The horeca backend URL",
                     "HORECA_API_KEY": "The API key used to send requests to horeca backend",
