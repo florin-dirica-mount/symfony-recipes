@@ -7,6 +7,9 @@
                         "all"
                     ]
                 },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%"
+                },
                 "env": {
                     "HORECA_BASE_URL": "The horeca backend URL",
                     "HORECA_API_KEY": "The API key used to send requests to horeca backend",
@@ -25,7 +28,7 @@
                     "executable": false
                 }
             },
-            "ref": "2b357552faab0bde7bd48d929f12fea01fa53e25"
+            "ref": "c785e3d6299451b2952b403771214d8e9a3861d8"
         }
     }
 }
