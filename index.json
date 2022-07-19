@@ -11,6 +11,6 @@
     "_links": {
         "repository": "github.com/florin-dirica-mount/symfony-recipes",
         "origin_template": "{package}:{version}@github.com/florin-dirica-mount/symfony-recipes:master",
-        "recipe_template": "https://api.github.com/repos/florin-dirica-mount/symfony-recipes/contents/horeca/{package}/{version}/manifest.json"
+        "recipe_template": "https://api.github.com/repos/florin-dirica-mount/symfony-recipes/contents/{package}/{version}/manifest.json"
     }
 }
